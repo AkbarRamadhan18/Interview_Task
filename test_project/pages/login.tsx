@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Router from 'next/router';
-import styles from '../public/styles/login.module.css'; // Import CSS module for styling
+import styles from '../public/styles/login.module.css';
 
 const Login = () => {
     const [Username, setUsername] = useState('');
@@ -23,8 +23,8 @@ const Login = () => {
                 throw new Error('Invalid Username or Password');
             }
 
-            // Redirect or perform actions upon successful login
-            Router.push('/dashboard'); // Example redirect to dashboard page
+
+            Router.push('/dashboard');
 
         } catch (error) {
             setError(error.message);

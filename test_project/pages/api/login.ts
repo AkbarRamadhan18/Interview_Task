@@ -1,5 +1,3 @@
-// pages/api/login.ts
-
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getUserByUsernameAndPassword } from '../../app/login';
 

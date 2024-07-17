@@ -1,5 +1,3 @@
-// app/login.ts
-
 import { connectionPool } from './dbconfig';
 
 interface User {

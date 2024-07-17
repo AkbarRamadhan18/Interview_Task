@@ -4,8 +4,7 @@ const Dashboard = () => {
     const router = useRouter();
 
     const handleLogout = () => {
-        // Lakukan proses logout di sini (misalnya menghapus token, membersihkan sesi, dll)
-        // Setelah logout, arahkan pengguna kembali ke halaman login
+
         router.push('/login');
     };
 

@@ -1,15 +1,13 @@
-// app/dbConfig.ts
-
 import { ConnectionPool } from 'mssql';
 
 const dbconfig = {
-    user: 'sa', // Ganti dengan username SQL Server Anda
-    password: 'akbar', // Ganti dengan password SQL Server Anda
-    server: 'AZZAMMILAKBARRA\\SQLEXPRESS03', // Ganti dengan nama server SQL Server Anda
-    database: 'NextLoginDB', // Ganti dengan nama database Anda
+    user: 'sa',
+    password: 'akbar',
+    server: 'AZZAMMILAKBARRA\\SQLEXPRESS03',
+    database: 'NextLoginDB',
     options: {
-        encrypt: false, // Ubah ke true jika Anda menggunakan koneksi SSL
-        enableArithAbort: true, // Mencegah kesalahan 'net'
+        encrypt: false,
+        enableArithAbort: true,
     },
 };
 
@@ -25,7 +23,7 @@ const initDB = async () => {
     }
 };
 
-// Panggil initDB saat aplikasi dimulai
+
 initDB();
 
 export { initDB, connectionPool };
